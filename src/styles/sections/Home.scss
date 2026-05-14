@@ -1,0 +1,119 @@
+section {
+  padding: 10% 1rem;
+  min-height: 100vh;
+  margin-bottom: 4rem;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content {
+    max-width: 400px;
+  }
+  &__title {
+    text-align: left;
+    font-size: 50px;
+    color: #fff;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    transform: translateY(-100px);
+    opacity: 0;
+    animation: RightSlide 1s ease forwards;
+    animation-delay: 1s;
+
+    span {
+      color: #2ecc71;
+    }
+  }
+
+  &__animation {
+    position: relative;
+    width: fit-content;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 0.7px #2ecc71;
+      background: linear-gradient(#2ecc71, #2ecc71);
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      -webkit-background-clip: text;
+      background-position: left;
+      transform: translateY(-100px);
+      opacity: 0;
+      animation:
+        textSlide 6s linear infinite,
+        TopSlide 1s ease forwards;
+      animation-delay: 2s, 1.2s;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      border-right: 2px solid #2ecc71;
+      opacity: 0;
+      animation:
+        CursorSlide 6s linear infinite,
+        TopSlide 1s ease forwards;
+
+      animation-delay: 2s, 1.2s;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 2rem 0;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: leftSlide 1s ease forwards;
+    animation-delay: 1.4s;
+  }
+
+  &__buttons {
+    position: relative;
+    width: 350px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #000;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      animation: Slide 1s ease forwards;
+      animation-delay: 1.6s;
+    }
+  }
+
+  &__image {
+    img {
+      width: 44.5vw;
+      background: rgba(255, 255, 255, -1);
+      border: 0.2rem solid rgba(255, 255, 255, -3);
+      border-radius: 4rem;
+      filter: drop-shadow(0 0 8rem #2ecc71);
+      animation: Scale 1s ease forwards;
+      scale: 0;
+      animation-delay: 2s;
+    }
+  }
+}

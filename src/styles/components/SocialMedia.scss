@@ -1,24 +1,29 @@
 .social-media {
-  margin: 2rem 0;
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+  text-align: left;
 }
-.social-media i {
-  display: inline-block;
-  font-size: 2.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: 0.2rem solid rgba(255, 255, 255, 0.3);
-  padding: 0.8rem;
-  margin: 0 0.5rem;
+.social-media a {
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.15rem solid rgba(255, 255, 255, 0.3);
   color: #fff;
-  cursor: pointer;
+  font-size: 26.5px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   animation: Bottom 1s ease forwards;
   animation-delay: calc(0.2s * var(--vlr));
   transform: translateY(100px);
   opacity: 0;
 }
-.social-media i:hover {
+.social-media a:hover {
   background: #2ecc71;
   border-color: #2ecc71;
   box-shadow:
@@ -26,10 +31,9 @@
     0 0 30px #2ecc71;
   transform: translateY(-3px);
 }
-.social-media i::after {
+.social-media a::after {
   content: "";
   position: absolute;
-  left: 0;
   left: 0;
   top: -100%;
   height: 300%;
@@ -38,6 +42,6 @@
   z-index: -1;
   transition: 0.5s ease;
 }
-i:hover::after {
+.social-media a:hover::after {
   top: 0;
 }

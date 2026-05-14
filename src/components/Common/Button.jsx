@@ -5,6 +5,7 @@ const Button = ({
   variant = "primary",
   size = "md",
   onClick,
+  className = "",
   ...props
 }) => {
   return (

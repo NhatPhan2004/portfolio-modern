@@ -1,8 +1,16 @@
 import SectionTitle from "../components/Common/SectionTitle";
+import "@styles/sections/Education.scss";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const Education = () => {
+  const { ref, inView } = useScrollAnimation();
+
   return (
-    <section id="education" className="education">
+    <section
+      id="education"
+      ref={ref}
+      className={`education ${inView ? "start-animation" : ""}`}
+    >
       <SectionTitle
         title="My"
         highlight="Education"

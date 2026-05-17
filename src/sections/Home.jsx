@@ -23,7 +23,9 @@ const Home = () => {
             className="home__btn"
             variant="primary"
             size="lg"
-            onClick={() => {}}
+            onClick={() => {
+              window.location.href = "#contact";
+            }}
           >
             Contact Me
           </Button>

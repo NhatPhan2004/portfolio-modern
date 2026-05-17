@@ -1,13 +1,13 @@
 .section-title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   &__heading {
     font-size: 50px;
     font-weight: 700;
     color: #fff;
-
-    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(-100px);
 
     @media (max-width: 768px) {
       font-size: 3rem;
@@ -24,6 +24,16 @@
     color: #9ca3af;
     font-size: 1rem;
     line-height: 1.8;
-    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(100px);
   }
+}
+
+.start-animation .section-title__heading {
+  animation: top 0.8s ease forwards;
+}
+
+.start-animation .section-title__subtitle {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.3s;
 }

@@ -1,4 +1,5 @@
 import "@styles/components/Button.scss";
+
 const Button = ({
   children,
   type = "button",
@@ -11,7 +12,7 @@ const Button = ({
   return (
     <button
       type={type}
-      className={`btn btn--${variant} btn--${size}`}
+      className={`btn btn--${variant} btn--${size} ${className}`}
       onClick={onClick}
       {...props}
     >

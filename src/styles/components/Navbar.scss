@@ -18,7 +18,7 @@
   &__logo {
     color: #fff;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 29px;
     font-weight: 700;
     transform: translateX(-100%);
     opacity: 0;
@@ -31,7 +31,7 @@
 
   &__menu {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
 
     &--active {
       right: 0;
@@ -41,7 +41,7 @@
   &__link {
     position: relative;
     display: inline-block;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     color: #fff;
     text-decoration: none;

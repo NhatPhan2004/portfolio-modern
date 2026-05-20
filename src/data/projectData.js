@@ -20,19 +20,11 @@ export const projectData = [
     title: "Calculator App",
     description:
       "Simple calculator app built with React. It supports basic arithmetic operations and has a clean, user-friendly interface.",
-    image: "../assets/Calculator-App.jpg",
+    image: "../assets/Calculator_app.jpg",
     link: "https://calculator-app-react-basics.vercel.app/",
   },
   {
     id: 4,
-    title: "AI Chatbot",
-    description:
-      "Natural language processing chatbot for customer service with a user-friendly interface.",
-    image: "../assets/AI-Chatbot.jpg",
-    link: "https://ai-chatbot-react-basics.vercel.app/",
-  },
-  {
-    id: 5,
     title: "Weather App",
     description:
       "Weather app built with React that fetches data from a weather API to display current weather conditions and forecasts for user-selected locations.",
@@ -40,7 +32,7 @@ export const projectData = [
     link: "https://weather-app-react-basics.vercel.app/",
   },
   {
-    id: 6,
+    id: 5,
     title: "To-Do List App",
     description:
       "A simple to-do list application built with React that allows users to add, edit, and delete tasks, as well as mark them as completed.",

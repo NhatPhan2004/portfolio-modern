@@ -2,36 +2,36 @@ export const technicalSkillsData = {
   languages: [
     {
       id: 1,
-      name: "JavaScript (ES6+)",
-      skillLevel: "80%",
+      name: "JavaScript",
+      details: ["ES6+", "DOM", "Async/Await"],
     },
     {
       id: 2,
-      name: "TypeScript ",
-      skillLevel: "75%",
+      name: "TypeScript",
+      details: ["Interfaces", "Generics"],
     },
     {
       id: 3,
       name: "SQL",
-      skillLevel: "70%",
+      details: ["Queries", "Joins", "DB Design"],
     },
   ],
 
   frontend: [
     {
       id: 1,
-      name: "React (Hooks, Typescript, Router, Redux)",
-      skillLevel: "85%",
+      name: "React",
+      details: ["Hooks", "Context API"],
     },
     {
       id: 2,
       name: "HTML5",
-      skillLevel: "90%",
+      details: ["Semantic", "Accessibility", "SEO "],
     },
     {
       id: 3,
       name: "CSS3",
-      skillLevel: "80%",
+      details: ["SCSS", "Res UI", "Flexbox/Grid"],
     },
   ],
 
@@ -39,35 +39,36 @@ export const technicalSkillsData = {
     {
       id: 1,
       name: "Node.js",
-      skillLevel: "70%",
+      details: ["Express", "JWT Auth", "REST API"],
     },
     {
       id: 2,
       name: "NestJS",
-      skillLevel: "65%",
+      details: ["Modules", "JWT", "DTO"],
     },
+
     {
       id: 3,
-      name: "Express.js",
-      skillLevel: "75%",
-    },
-    {
-      id: 4,
-      name: "Restful API",
-      skillLevel: "80%",
+      name: "RESTful API",
+      details: ["CRUD", "HTTP Methods", "JSON"],
     },
   ],
 
   database: [
     {
       id: 1,
-      name: "MySQL (RBDMS)",
-      skillLevel: "70%",
+      name: "MySQL",
+      details: ["Schema", "Procedures"],
     },
     {
       id: 2,
-      name: "MongoDB (NoSQL)",
-      skillLevel: "65%",
+      name: "MongoDB",
+      details: ["Mongoose", "Aggregation"],
+    },
+    {
+      id: 3,
+      name: "SQL Server",
+      details: ["PostgreSQL", "SQLite"],
     },
   ],
 
@@ -75,12 +76,12 @@ export const technicalSkillsData = {
     {
       id: 1,
       name: "Git/GitHub",
-      skillLevel: "80%",
+      details: ["Version Ctrl", "Branching", "PR"],
     },
     {
       id: 2,
       name: "Figma",
-      skillLevel: "70%",
+      details: ["Wireframe", "Prototype"],
     },
   ],
 };
@@ -88,23 +89,37 @@ export const technicalSkillsData = {
 export const softSkillsData = [
   {
     id: 1,
-    skills: "Teamwork, Logical Thinking, and Problem-Solving Skills",
+    title: "Problem Solving",
+    desc: "Analyze complex problems and deliver efficient, scalable solutions.",
   },
   {
     id: 2,
-    skills: "Open-Minded, Friendly, Eager to Learn, and Quick to Adapt",
+    title: "Team Collaboration",
+    desc: "Work effectively within teams and contribute to shared project goals.",
   },
   {
     id: 3,
-    skills:
-      "Highly Responsible, Disciplined, and Willing to take on challenges",
+    title: "Fast Learning",
+    desc: "Quickly adapt to new technologies, tools, and development workflows.",
   },
   {
     id: 4,
-    skills: "Good Communication and Interpersonal Skills",
+    title: "Communication",
+    desc: "Explain technical ideas clearly and collaborate efficiently with others.",
   },
   {
     id: 5,
-    skills: "Ability to Read and Comprehend English Technical Documents",
+    title: "Adaptability",
+    desc: "Remain flexible and responsive in dynamic working environments.",
+  },
+  {
+    id: 6,
+    title: "Critical Thinking",
+    desc: "Approach challenges logically with a solution-oriented mindset.",
+  },
+  {
+    id: 7,
+    title: "Ownership Mindset",
+    desc: "Take responsibility for tasks and maintain high-quality outcomes.",
   },
 ];

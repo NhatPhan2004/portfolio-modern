@@ -45,19 +45,19 @@ export const educationData = {
   ],
   activities: [
     {
-      activity: "Member of IT Student Union - Hanoi Architecture University ",
+      activity: "Member of IT Student Union - Hanoi Architecture University. ",
     },
     {
       activity:
-        "Participated in student scientific research competitions and gained experience with complex projects",
+        "Participated in student scientific research competitions and gained experience with complex projects.",
     },
     {
       activity:
-        "Participating in donations to support the recovery of Typhoon Yagi ",
+        "Participating in donations to support the recovery of the consequences of the 2025 hurricanes. ",
     },
     {
       activity:
-        "Completed Front-End Development internship at Wand Technology JSC with outstanding performance (2025)",
+        "Completed Front-End Development internship at Wand Technology JSC with outstanding performance (2025).",
     },
   ],
 };

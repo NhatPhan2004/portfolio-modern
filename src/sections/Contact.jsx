@@ -7,7 +7,7 @@ import Button from "../components/Common/Button";
 
 const Contact = () => {
   const form = useRef();
-  const { ref, inView } = useScrollAnimation();
+  const { ref, inView } = useScrollAnimation(0.2);
   const sendEmail = (e) => {
     e.preventDefault();
 

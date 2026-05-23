@@ -1,17 +1,18 @@
 .skills {
-  padding: 100px 8%;
+  width: 100%;
   color: #fff;
 
   &__container {
     max-width: 1200px;
+    padding: 100px 60px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    gap: 30px;
   }
 
   &__group {
-    padding: 20px;
+    padding: 25px;
     border-radius: 28px;
     background: rgba(35, 47, 41, 0.6);
     border: 1.5px solid rgba(255, 255, 255, 0.15);
@@ -190,20 +191,14 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .skills {
     &__container {
       grid-template-columns: 1fr;
+      padding: 0 40px;
     }
-  }
-}
-
-@media (max-width: 576px) {
-  .skills {
-    padding: 80px 5%;
-
     &__group {
-      padding: 22px;
+      padding: 20px;
     }
 
     &__grid {

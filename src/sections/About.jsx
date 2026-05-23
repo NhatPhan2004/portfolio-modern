@@ -40,39 +40,41 @@ const About = () => {
         />
       </div>
 
-      <div className="about__wrapper--vertical">
-        <div className="about__image-box">
-          <img src={aboutImg} alt="Phan Như Nhật" className="about__image" />
-        </div>
-
-        <h2 className="about__hero-text">{hero}</h2>
-
-        <div className="about__content">
-          <div
-            className="about__desc"
-            dangerouslySetInnerHTML={formatHTML(firstSection.content, true)}
-          />
-
-          <div
-            className={`about__expanded-content ${isExpanded ? "about__expanded-content--show" : ""}`}
-          >
-            {remainingSections.map((section) => (
-              <div key={section.id} className="about__item">
-                <div
-                  className="about__desc-extended"
-                  dangerouslySetInnerHTML={formatHTML(section.content)}
-                />
-              </div>
-            ))}
+      <div className="about__container">
+        <div className="about__wrapper--vertical">
+          <div className="about__image-box">
+            <img src={aboutImg} alt="Phan Như Nhật" className="about__image" />
           </div>
 
-          <div className="about__buttons">
-            <Button
-              className="about__btn"
-              onClick={() => setIsExpanded(!isExpanded)}
+          <h2 className="about__hero-text">{hero}</h2>
+
+          <div className="about__content">
+            <div
+              className="about__desc"
+              dangerouslySetInnerHTML={formatHTML(firstSection.content, true)}
+            />
+
+            <div
+              className={`about__expanded-content ${isExpanded ? "about__expanded-content--show" : ""}`}
             >
-              {isExpanded ? "Show Less" : "Show More"}
-            </Button>
+              {remainingSections.map((section) => (
+                <div key={section.id} className="about__item">
+                  <div
+                    className="about__desc-extended"
+                    dangerouslySetInnerHTML={formatHTML(section.content)}
+                  />
+                </div>
+              ))}
+            </div>
+
+            <div className="about__buttons">
+              <Button
+                className="about__btn"
+                onClick={() => setIsExpanded(!isExpanded)}
+              >
+                {isExpanded ? "Show Less" : "Show More"}
+              </Button>
+            </div>
           </div>
         </div>
       </div>

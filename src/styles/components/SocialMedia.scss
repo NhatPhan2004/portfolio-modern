@@ -45,3 +45,10 @@
 .social-media a:hover::after {
   top: 0;
 }
+
+@media (max-width: 768px) {
+  .social-media {
+    justify-content: center;
+    gap: 10px;
+  }
+}

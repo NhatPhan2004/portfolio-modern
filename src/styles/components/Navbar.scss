@@ -2,13 +2,21 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 25px 10%;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  overflow-x: hidden;
   z-index: 100;
+  background: transparent;
   transition: 0.5s ease;
+  &__container {
+    max-width: 1200px;
+    padding: 25px 60px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
 
   &--sticky {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
@@ -32,10 +40,6 @@
   &__menu {
     display: flex;
     gap: 2rem;
-
-    &--active {
-      right: 0;
-    }
   }
 
   &__link {
@@ -91,9 +95,73 @@
       right: -8px;
     }
   }
+
+  #menu {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+  }
 }
-#menu {
-  color: #fff;
-  font-size: 2.5rem;
-  display: none;
+
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #0f0a0a;
+    box-sizing: border-box;
+
+    &__container {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__menu {
+      position: fixed;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 20px;
+      background: #0f0a0a;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      transform: translateX(30%);
+      visibility: hidden;
+      opacity: 0;
+      transition:
+        transform 0.4s ease,
+        opacity 0.3s ease,
+        visibility 0.4s;
+
+      &--active {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    #menu {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.5s ease;
+      right: 80px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+  }
 }

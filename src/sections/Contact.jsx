@@ -13,11 +13,11 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_nhat2004",
-        "template_nhat2004",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
 
         form.current,
-        "I8mad6aKzMxo5Hm0x",
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
 
       .then(
@@ -44,47 +44,54 @@ const Contact = () => {
         highlight="Me"
         subtitle="Let’s connect and collaborate. Reach out for opportunities and ideas."
       />
-      <form ref={form} onSubmit={sendEmail} className="contact__form">
-        <div className="input-box">
-          <input
-            type="text"
-            name="fullName"
-            placeholder="Full Name"
-            required
-          ></input>
-          <input type="email" name="email" placeholder="Email" required></input>
-        </div>
+      <div className="contact__container">
+        <form ref={form} onSubmit={sendEmail} className="contact__form">
+          <div className="input-box">
+            <input
+              type="text"
+              name="fullName"
+              placeholder="Full Name"
+              required
+            ></input>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            ></input>
+          </div>
 
-        <div className="input-box">
-          <input
-            type="phone"
-            name="phone"
-            placeholder="Mobile Number"
-            required
-          ></input>
-          <input
-            type="text"
-            name="subject"
-            placeholder="Subject For"
-            required
-          ></input>
-        </div>
-        <div className="textarea-box">
-          <textarea
-            name="message"
-            placeholder="Message"
-            cols="30"
-            rows="6"
-            required
-          ></textarea>
-        </div>
+          <div className="input-box">
+            <input
+              type="phone"
+              name="phone"
+              placeholder="Mobile Number"
+              required
+            ></input>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject For"
+              required
+            ></input>
+          </div>
+          <div className="textarea-box">
+            <textarea
+              name="message"
+              placeholder="Message"
+              cols="30"
+              rows="6"
+              required
+            ></textarea>
+          </div>
 
-        <div className="contact__buttons">
-          <Button type="submit" className="contact__btn">
-            Send Message
-          </Button>
-        </div>
-      </form>
+          <div className="contact__buttons">
+            <Button type="submit" className="contact__btn">
+              Send Message
+            </Button>
+          </div>
+        </form>
+      </div>
     </section>
   );
 };

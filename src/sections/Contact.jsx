@@ -80,7 +80,7 @@ const Contact = () => {
               name="message"
               placeholder="Message"
               cols="30"
-              rows="6"
+              rows="8"
               required
             ></textarea>
           </div>

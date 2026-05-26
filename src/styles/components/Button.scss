@@ -1,12 +1,12 @@
 .btn {
-  height: 45px;
+  height: 50px;
   width: 15rem;
   color: #fff;
   background: rgba(255, 255, 255, 0.5);
   border: 0.1rem solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 0.6rem;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -37,5 +37,12 @@
     &::before {
       top: 0;
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  .btn {
+    height: 45px;
+    font-size: 16px;
   }
 }

@@ -163,7 +163,6 @@
   .home {
     &__container {
       max-width: 100%;
-      padding: 40px 60px;
     }
     &__content {
       max-width: 400px;
@@ -186,7 +185,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .home {
     min-height: auto;
 
@@ -204,6 +203,7 @@
     &__title,
     &__description {
       text-align: center;
+      padding: 0 20px;
     }
 
     &__animation {

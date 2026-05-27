@@ -7,7 +7,12 @@ const useScrollAnimation = (threshold = 0.2) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setInView(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setInView(true);
+
+          // Dừng theo dõi sau khi đã chạy animation lần đầu
+          observer.unobserve(entry.target);
+        }
       },
       {
         threshold,

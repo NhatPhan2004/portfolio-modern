@@ -13,27 +13,27 @@ https://portfolio-modern-nhatphan2004.vercel.app
 
 ### Home Section
 
-![Home](./preview/home.png)
+![Home](./src/assets/preview/home.png)
 
 ### Projects Section
 
-![Projects](./preview/projects.png)
+![Projects](./src/assets/preview/projects.png)
 
 ### About Section
 
-![About](./preview/about.png)
+![About](./src/assets/preview/about.png)
 
 ### Education Section
 
-![Education](./preview/education.png)
+![Education](./src/assets/preview/education.png)
 
 ### Skills Section
 
-![Skills](./preview/skills.png)
+![Skills](./src/assets/preview/skills.png)
 
 ### Contact Section
 
-![Contact](./preview/contact.png)
+![Contact](./src/assets/preview/contact.png)
 
 ## ✨ Features
 

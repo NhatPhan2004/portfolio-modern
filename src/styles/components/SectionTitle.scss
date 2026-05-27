@@ -34,7 +34,7 @@
   animation-delay: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .section-title {
     margin-bottom: 1rem;
   }
@@ -45,6 +45,6 @@
 
   .section-title__subtitle {
     font-size: 0.9rem;
-    padding: 0 30px;
+    padding: 0 40px;
   }
 }

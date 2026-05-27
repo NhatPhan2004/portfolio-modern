@@ -1,10 +1,12 @@
 .education {
   width: 100%;
+  text-align: center;
+  padding: 80px 0;
 
   &__container {
     max-width: 1440px;
-    padding: 30px;
     margin: 0 auto;
+    padding: 0 30px;
   }
 
   &__group {
@@ -163,7 +165,7 @@
   .education {
     &__container {
       max-width: 1200px;
-      padding: 60px;
+      padding: 0 60px;
     }
     &__group {
       padding: 10px 80px;

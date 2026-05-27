@@ -1,16 +1,112 @@
-# React + Vite
+# ✨ Modern Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully responsive portfolio website built with ReactJS, SCSS, and advanced UI animations.
 
-Currently, two official plugins are available:
+Designed to showcase projects, technical skills, education, and professional experience with smooth interactions and clean architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+🌐 Portfolio Website:
+https://portfolio-modern-nhatphan2004.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🖼 Preview
 
-## Expanding the ESLint configuration
+### Home Section
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Home](./preview/home.png)
+
+### Projects Section
+
+![Projects](./preview/projects.png)
+
+### About Section
+
+![About](./preview/about.png)
+
+### Education Section
+
+![Education](./preview/education.png)
+
+### Skills Section
+
+![Skills](./preview/skills.png)
+
+### Contact Section
+
+![Contact](./preview/contact.png)
+
+## ✨ Features
+
+- Fully Responsive Modern UI
+- Smooth Scroll Animations
+- Reusable React Components
+- SCSS Architecture with BEM Methodology
+- Dynamic Project Showcase
+- Interactive Hover Effects
+- Animated Section Transitions
+- Responsive Navigation Menu
+- Clean Folder Structure
+- Optimized User Experience
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- ReactJS
+- SCSS
+- BEM Methodology
+- Intersection Observer API
+
+### Deployment
+
+- Vercel
+
+## 📱 Responsive Design
+
+The website is optimized for:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+Built using modern responsive layout techniques with flexible containers and media queries.
+
+## 🎬 Animations & UI Effects
+
+- Scroll-triggered reveal animations
+- Staggered section transitions
+- Smooth hover interactions
+- Glassmorphism UI effects
+- Gradient highlights and glowing effects
+- Animated navigation interactions
+
+---
+
+# Optimization
+
+```md
+## 📈 Performance & Optimization
+
+- Optimized component structure
+- Reusable animation hooks
+- Responsive image handling
+- Clean SCSS organization
+- Efficient rendering with React
+- Smooth animation performance
+```
+
+## 👨‍💻 Author
+
+Phan Nhu Nhat
+
+- Portfolio: https://portfolio-modern-nhatphan2004.vercel.app
+- GitHub: https://github.com/NhatPhan2004
+- LinkedIn: https://www.linkedin.com/in/phan-nh%C6%B0-nh%E1%BA%ADt-3a43a0361/
+- Facebook: https://www.facebook.com/nhat.phan.450465
+
+## ⚠️ Usage Notice
+
+This portfolio was personally designed and developed by Phan Nhu Nhat.
+
+Feel free to explore and learn from the codebase, but please do not copy, reproduce, or redistribute the design, content, or source code without permission.

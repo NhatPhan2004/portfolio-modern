@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-modern-nhatphan2004.vercel.app/sitemap.xml
